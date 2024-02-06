@@ -110,3 +110,63 @@ console.log(a)  // [ 2, 3 ]
 // 잘린 값을 빼서 새 배열을 만들고 싶으면 slice 활용 
 
 
+
+// 연습 - > D로 시작하는 동물들 구하기 
+let animals = [
+    "Cat",
+    "Elephant",
+    "Lion",
+    "Tiger",
+    "Giraffe",
+    "Monkey",
+    "Zebra",
+    "Bear",
+    "Dog",
+    "Deer",
+    "Duck",
+    "Dolphin",
+    "Penguin",
+    "Snake",
+    "Kangaroo",
+    "Hippopotamus",
+    "Owl"
+  ];
+
+// 1. D로 시작하는 동물을 알고 있을 때 
+
+// D로 시작하는 첫과 끝 동물 인덱스 값 구하기 
+console.log(animals.indexOf("Dog")) // 8
+console.log(animals.indexOf("Dolphin")) // 11
+
+let animals_D = animals.slice(8,12);
+console.log(animals_D)          //  [ 'Dog', 'Deer', 'Duck', 'Dolphin' ]
+
+// 2. D로 시작하는 동물을 모를 때 
+let x = animals.filter(item => item.startsWith("D"));
+console.log(x);                 // [ 'Dog', 'Deer', 'Duck', 'Dolphin' ]
+
+// 1과 2는 같은 결과를 출력한다.
+// 2의 방법은 인덱스값을 몰라도 찾을 수 있어서 필요한 상황에 쓰면 좋을 듯 !! 
+
+// 마지막 문자열 기준으로 찾아 보기
+
+// "n"으로 끝나는 동물을 찾아 보자 
+
+// 1. 
+let animalsEndingWithN = animals.filter(function(animal) {
+    return animal.endsWith("n");
+  });
+  
+  // 찾은 동물 출력
+  console.log(animalsEndingWithN); // [ 'Lion', 'Dolphin', 'Penguin' ]
+
+// 2.   
+  let y = animals.filter(item => item.endsWith("n"));
+  console.log(y);  // [ 'Lion', 'Dolphin', 'Penguin' ]
+
+// 1번과 2번은 같은 결과를 가지고 있다.
+// 2번에서 사용하는 화살표(=>)는 ES6(JavaScript의 최신 버전)에서 도입된
+// 화살표 함수(arrow function)의 구문으로 함수를 간결하게 정의하는 방법 중 하나이다.
+
+
+
