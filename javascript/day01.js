@@ -166,7 +166,7 @@ console.log(cc) // 2
 /*
 let dd = 1
 console.log(dd) 
-let dd = 2
+let dd = 2 // Identifier 'dd' has already been declared
 console.log(dd) 
 */
 /*
