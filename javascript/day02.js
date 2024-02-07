@@ -4,6 +4,7 @@
 /* 개요
 자바스크립트의 기본 문법
 4. 배열
+5. 배열 문제
 */
 
 // ======== 4. 배열 ========
@@ -167,6 +168,4 @@ let animalsEndingWithN = animals.filter(function(animal) {
 // 1번과 2번은 같은 결과를 가지고 있다.
 // 2번에서 사용하는 화살표(=>)는 ES6(JavaScript의 최신 버전)에서 도입된
 // 화살표 함수(arrow function)의 구문으로 함수를 간결하게 정의하는 방법 중 하나이다.
-
-
 
