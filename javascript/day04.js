@@ -249,3 +249,41 @@ for(let i=2;i<n;i++){
   }
 }
 console.log(isPrime)
+
+
+// ========== for in / for of ===============
+
+// for ... of
+
+let chu = ['apple', 'mango', 'grape']
+
+// for (let i = 0; i < chu.length; i++) {
+//   console.log("i like ", chu[i])
+// }
+
+let sentence = '안녕하세요'
+
+for (let char of sentence) {
+  console.log("char", char)
+}
+
+// for ... in
+
+let person = {
+  name: "kong",
+  age: 20,
+  cute: true,
+}
+
+// 키 값을 조회하고 싶을 때 / 동적인 객체의 값에 접근할 때 
+// for in 사용
+for (let key in person) {
+  console.log("key", key)
+}
+/* 결과 
+key name
+key age
+key cute
+*/
+
+
