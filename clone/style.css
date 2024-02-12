@@ -50,21 +50,38 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 12px;
-    background-color: var(--black-color);
-    color: var(--white-color)
+    background-color: var(--white-color);
+    color: var(--white-color);
 }
 
 header .logo {
     font-size: var(--font-large)
 }
 header .logo i {
-    color: var(--red-color)
+    color: var(--red-color);
 }
 
 header .icons .fa-search {
     margin-right: 12px;
 }
 
+header .title{
+    color: #140a00;
+    font-weight: bold;
+}
+
+header .icons i{
+    color : #140a00;
+}
+/*
+header .searchInput input{
+    padding : 4px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    border : 1px solid lightgray;
+}
+*/
 /*video player*/
 .player {
     position:sticky;
@@ -74,13 +91,15 @@ header .icons .fa-search {
 }
 .player video {
     width:100%;
-    height:100%;
-    max-width: 1000px;
+    height:400px;
+    object-fit: cover;
+    max-width: 900px;
 }
 
 /*video info*/
-body > .info {
-    padding :12px;
+.info {
+    padding :15px;
+    width: 70%;
 }
 .info .metadata .hashtags {
     display: flex;
@@ -89,7 +108,7 @@ body > .info {
   }
   
 .info .metadata .hashtags li {
-    margin-right: 12px;
+    margin-right: 15px;
 }
   
 .info .metadata .titleAndButton {
@@ -98,7 +117,7 @@ body > .info {
 
 .info .metadata .titleAndButton .title {
     font-size: var(--font-medium);
-    margin-right: 12px;
+    margin-right: 15px;
 }
 
 .info .metadata .titleAndButton .title.clamp {
@@ -127,7 +146,7 @@ body > .info {
 .info .actions {
     display: flex;
     justify-content: space-between;
-    margin : 12px 0;
+    margin : 15px 0;
 }
 
 .info .actions button{
@@ -167,7 +186,8 @@ body > .info {
 }
 
 .info .channel .metadata img {
-    width: var(--avatar-size);
+    /*width: var(--avatar-size);*/
+    width : 45px;
     height: var(--avatar-size);
     border-radius: 50%;
     margin-right: var(--spacing);
@@ -186,6 +206,7 @@ body > .info {
     text-transform: uppercase;
     color: var(--red-color);
     font-size: var(--font-medium);
+    margin-right: 15px;
   }
 
 /*upNext*/
@@ -213,7 +234,11 @@ body > .info {
     margin-right : 12px;
 }
 .upNext .item .img img{
-    width: 100%;
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
 }
 .upNext .item .info {
     flex : 1 1 60%;
@@ -221,7 +246,7 @@ body > .info {
 
 .upNext .item .moreBtn {
     flex : 1 1 5%;
-
+    margin-bottom: 110px;
 }
 
 /*3.*/
@@ -235,11 +260,16 @@ body > .info {
     font-size: var(--font-small);
   }
   
-  .upNext .item .Info .name,
-  .upNext .item .Info .views {
+  .upNext .item .Info .name {
     font-size: var(--font-micro);
     color: var(--grey-dark-color);
   }
+
+  .upNext .item .Info .views {
+    font-size: 10px;
+    color: var(--grey-dark-color);
+  }
+
 
 /*4*/
 .infoAndUpNext {
@@ -251,5 +281,37 @@ body > .info {
     .infoAndUpNext {
         flex-direction: row;
         margin : 12px 0;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .player video {
+        height:230px;
+    }
+    .upNext .item .info {
+        font-size: 12px;
+    }
+    .upNext .item .info .name {
+        margin-top: 10px;
+    }
+    .upNext .item .info .views {
+        font-size : 10px;
+        margin-top: 10px;
+    }
+    .info {
+        width : 100%;
+    }
+    header {
+        background-color: #140a00;
+    }
+    header .title {
+        color : var(--white-color);
+    }
+    header .icons i {
+        color : var(--white-color);
+    }
+    header .logo i {
+        position: relative;
+        top : 2px;
     }
 }
