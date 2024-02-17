@@ -174,3 +174,11 @@ function sumNumber() {
 
 console.log(sumNumber());
 
+// 다시 푼 방법
+
+const sumNumber = () => {
+    const addNumber = a => b => c => a + b + c;
+    return addNumber(1)(2)(3);
+  };
+  
+  console.log(sumNumber());
