@@ -1,8 +1,6 @@
-# study02
+# Soltube
 
-
-
-### 1. html/css 연습 youtube 클론코딩
+### html/css 연습 youtube 클론코딩
 
 <p align="center">
 
