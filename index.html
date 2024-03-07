@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/de18e820f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Soltube</title>
+  </head>
+  <body>
+    <!--헤더-->
+    <header>
+      <div class="logo">
+        <!-- <i class="bx bxl-youtube"></i> -->
+        <i class="fa-brands fa-youtube"></i>
+        <span class="title">Soltube</span>
+      </div>
+      <!--
+        <div class="searchInput">
+            <input type="text">
+        </div>
+        -->
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+    <!--비디오 플레이어-->
+    <section class="player">
+      <!-- <video autoplay src="video/IMG_9989.MOV" controls></video> -->
+      <img
+        src="https://i.pinimg.com/originals/70/37/d4/7037d478852af21357f038fac2d2e9f6.gif"
+      />
+    </section>
+
+    <!--비디오 정보/upNext-->
+    <div class="infoAndUpNext">
+      <!--비디오 정보-->
+      <section class="info">
+        <!--metadata-->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#안녕</li>
+            <li>#보리</li>
+            <li>#보고싶다</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp"
+              >보리 보고싶어!보리 보고싶어!보리 보고싶어!보리 보고싶어!보리
+              보고싶어!보리 보고싶어!보리 보고싶어!보리 보고싶어! 보리
+              보고싶어!보리 보고싶어!보리 보고싶어!보리 보고싶어!보리 보고싶어!
+              토글링테스트합니다이 토글링테스트합니다이 토글링테스트합니다이
+              토글링테스트합니다이 토글링테스트합니다이
+            </span>
+            <button class="moreBtn"><i class="bx bxs-down-arrow"></i></button>
+          </div>
+          <span class="views">조회수 48만회 &nbsp;2개월 전</span>
+        </div>
+        <!--actions-->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>1만</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>공유</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>저장</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>신고</span>
+            </button>
+          </li>
+        </ul>
+        <!--channel description-->
+        <div class="channel">
+          <div class="metadata">
+            <img
+              src="https://i.pinimg.com/564x/7a/e6/cf/7ae6cf41d31171ba315676a4ec139142.jpg"
+            />
+            <div class="info">
+              <span class="name">sw감자</span>
+              <span class="subscribers">구독자 17.2만명</span>
+            </div>
+          </div>
+          <button class="subscribe">구독</button>
+        </div>
+      </section>
+      <!--댓글-->
+      <!-- <section>
+        <div class="reply">
+          댓글 3 <input type="text" placeholder="댓글 추가" />
+        </div>
+      </section> -->
+      <!--upNext-->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.pinimg.com/564x/00/ae/a8/00aea875a7769c6ce6550bf42d1d0aac.jpg"
+                alt="img1"
+              />
+            </div>
+            <div class="info">
+              <span class="title">코딩 공부할 때 듣는 플레이리스트1</span>
+              <span class="name">김플리</span>
+              <span class="views">조회수 10만회 · 3개월 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.pinimg.com/564x/1a/bb/6a/1abb6aa07e9771ea79eabae4025338e8.jpg"
+                alt="img2"
+              />
+            </div>
+            <div class="info">
+              <span class="title">코딩 공부할 때 듣는 플레이리스트2</span>
+              <span class="name">김플리</span>
+              <span class="views">조회수 32만회 · 1개월 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.pinimg.com/564x/95/f5/b7/95f5b7e85090f24f7b016b76f6106c76.jpg"
+                alt="img3"
+              />
+            </div>
+            <div class="info">
+              <span class="title">코딩 공부할 때 듣는 플레이리스트3</span>
+              <span class="name">김플리</span>
+              <span class="views">조회수 50만회 · 1년 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.pinimg.com/originals/bb/2b/c3/bb2bc3149f83c8e47f09958e6cb99772.gif"
+                alt="img4"
+              />
+            </div>
+            <div class="info">
+              <span class="title">코딩 공부할 때 듣는 플레이리스트4</span>
+              <span class="name">김플리</span>
+              <span class="views">조회수 63만회 · 1년 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img">
+              <img
+                src="https://i.pinimg.com/originals/13/45/50/13455040862ac9b8e465185878838cf1.gif"
+                alt="img5"
+              />
+            </div>
+            <div class="info">
+              <span class="title">코딩 공부할 때 듣는 플레이리스트5</span>
+              <span class="name">김플리</span>
+              <span class="views">조회수 23만회 · 2년 전</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
